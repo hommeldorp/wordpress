@@ -11,7 +11,7 @@ node_modules
 /wflogs
 # Ignore anything within themes, except the theme we are building.
 /themes/*
-!/hommel-theme
+!/themes/hommeldorp
 # Ignore anything within plugins. Exceptions to this to follow.
 /plugins/*
 # Track any plugins prefixed with myproject-

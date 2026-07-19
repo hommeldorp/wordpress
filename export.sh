@@ -12,3 +12,4 @@ if [[ $_os == "Darwin"* ]] ; then
 else
   sed -i 1,1d $_file # Removes the password warning from the file
 fi
+
