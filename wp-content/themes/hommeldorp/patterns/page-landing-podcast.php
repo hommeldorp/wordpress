@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Landing page for podcast
- * Slug: twentytwentyfive/page-landing-podcast
- * Categories: twentytwentyfive_page, featured
+ * Slug: hommeldorp/page-landing-podcast
+ * Categories: hommeldorp_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -11,13 +11,13 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Hommeldorp 1.0
  */
 
 ?>
 
-<!-- wp:pattern {"slug":"twentytwentyfive/hero-podcast"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/heading-and-paragraph-with-image"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/logos"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/grid-videos"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/cta-newsletter"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/hero-podcast"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/heading-and-paragraph-with-image"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/logos"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/grid-videos"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/cta-newsletter"} /-->

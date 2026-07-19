@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Right-aligned page
- * Slug: twentytwentyfive/template-page-vertical-header-blog
+ * Slug: hommeldorp/template-page-vertical-header-blog
  * Template Types: page
  * Viewport width: 1400
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Hommeldorp 1.0
  */
 
 ?>

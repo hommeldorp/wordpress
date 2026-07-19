@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Header with large title
- * Slug: twentytwentyfive/header-large-title
+ * Slug: hommeldorp/header-large-title
  * Categories: header
  * Block Types: core/template-part/header
  * Description: Site header with large site title and right-aligned navigation.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Hommeldorp 1.0
  */
 
 ?>

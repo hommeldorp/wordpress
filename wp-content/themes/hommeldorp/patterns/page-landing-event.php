@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Landing page for event
- * Slug: twentytwentyfive/page-landing-event
- * Categories: twentytwentyfive_page, featured
+ * Slug: hommeldorp/page-landing-event
+ * Categories: hommeldorp_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -11,13 +11,13 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Hommeldorp 1.0
  */
 
 ?>
 
-<!-- wp:pattern {"slug":"twentytwentyfive/hero-full-width-image"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/heading-and-paragraph-with-image"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/banner-description-images-grid"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/text-faqs"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/contact-centered-social-link"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/hero-full-width-image"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/heading-and-paragraph-with-image"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/banner-description-images-grid"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/text-faqs"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/contact-centered-social-link"} /-->

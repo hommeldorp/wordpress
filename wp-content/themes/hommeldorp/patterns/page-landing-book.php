@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Landing page for book
- * Slug: twentytwentyfive/page-landing-book
- * Categories: twentytwentyfive_page, featured
+ * Slug: hommeldorp/page-landing-book
+ * Categories: hommeldorp_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -11,14 +11,14 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Hommeldorp 1.0
  */
 
 ?>
 
-<!-- wp:pattern {"slug":"twentytwentyfive/hero-book"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/cta-book-links"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/banner-about-book"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/cta-book-locations"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/text-faqs"} /-->
-<!-- wp:pattern {"slug":"twentytwentyfive/cta-newsletter"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/hero-book"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/cta-book-links"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/banner-about-book"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/cta-book-locations"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/text-faqs"} /-->
+<!-- wp:pattern {"slug":"hommeldorp/cta-newsletter"} /-->

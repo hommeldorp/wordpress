@@ -1,5 +1,5 @@
 {
-	"name": "twentytwentyfive",
+	"name": "hommeldorp",
 	"version": "1.5.0",
 	"description": "Default WP Theme",
 	"author": "The WordPress Contributors",
@@ -11,7 +11,7 @@
 	"bugs": {
 		"url": "https://core.trac.wordpress.org/"
 	},
-	"homepage": "https://wordpress.org/themes/twentytwentyfive/",
+	"homepage": "https://wordpress.org/themes/hommeldorp/",
 	"engines": {
 		"node": ">=20.10.0",
 		"npm": ">=10.2.3"
