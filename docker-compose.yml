@@ -3,17 +3,18 @@ name: hommeldorp-wordpress
 services:
   wp:
     image: wordpress:latest # https://hub.docker.com/_/wordpress/
+    user: ${UID}:${GID}
     ports:
       - ${IP}:${PORT}:80 # change ip if required
     volumes:
       - ./config/wp_php.ini:/usr/local/etc/php/conf.d/conf.ini
       - ./wp-app:/var/www/html # Full wordpress project
       - type: bind
-        source: ./wp-content
-        target: /var/www/html/wp-content
+        source: ./themes/hommeldorp
+        target: /var/www/html/wp-content/themes/hommeldorp
       # - ./wp-content/:/var/www/html/wp-content
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
-      #- ./theme-name/trunk/:/var/www/html/wp-content/themes/theme-name # Theme development
+      # - ./themes/hommeldorp/:/var/www/html/wp-content/themes/hommeldorp # Theme development
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: "${DB_NAME}"
