@@ -3,18 +3,21 @@ name: hommeldorp-wordpress
 services:
   wp:
     image: wordpress:latest # https://hub.docker.com/_/wordpress/
+    # runs the container with the same user ID as the host
+    # this is needed to ensure the Site Editor can write to the bind mount
     user: ${UID}:${GID}
     ports:
       - ${IP}:${PORT}:80 # change ip if required
     volumes:
       - ./config/wp_php.ini:/usr/local/etc/php/conf.d/conf.ini
       - ./wp-app:/var/www/html # Full wordpress project
+      # using a bind mount allows both the host and the container to write to the theme
       - type: bind
         source: ./themes/hommeldorp
         target: /var/www/html/wp-content/themes/hommeldorp
-      # - ./wp-content/:/var/www/html/wp-content
+      #- ./wp-content/:/var/www/html/wp-content
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
-      # - ./themes/hommeldorp/:/var/www/html/wp-content/themes/hommeldorp # Theme development
+      #- ./themes/hommeldorp/:/var/www/html/wp-content/themes/hommeldorp # Theme development
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: "${DB_NAME}"
