@@ -15,6 +15,9 @@ services:
       - type: bind
         source: ./themes/hommeldorp
         target: /var/www/html/wp-content/themes/hommeldorp
+      - type: bind
+        source: ./uploads
+        target: /var/www/html/wp-content/uploads
       #- ./wp-content/:/var/www/html/wp-content
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
       #- ./themes/hommeldorp/:/var/www/html/wp-content/themes/hommeldorp # Theme development

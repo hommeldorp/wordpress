@@ -18,37 +18,37 @@
 			"defaultPalette": false,
 			"palette": [
 				{
-					"color": "#FFFFFF",
+					"color": "#ffe7ab",
 					"name": "Base",
 					"slug": "base"
 				},
 				{
-					"color": "#111111",
+					"color": "#363b3f",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#FFEE58",
+					"color": "#ffae17e0",
 					"name": "Accent 1",
 					"slug": "accent-1"
 				},
 				{
-					"color": "#F6CFF4",
+					"color": "#dd5d1e",
 					"name": "Accent 2",
 					"slug": "accent-2"
 				},
 				{
-					"color": "#503AA8",
+					"color": "#792260",
 					"name": "Accent 3",
 					"slug": "accent-3"
 				},
 				{
-					"color": "#686868",
+					"color": "#e9a334",
 					"name": "Accent 4",
 					"slug": "accent-4"
 				},
 				{
-					"color": "#FBFAF3",
+					"color": "#fef3e2",
 					"name": "Accent 5",
 					"slug": "accent-5"
 				},
@@ -56,6 +56,16 @@
 					"color": "color-mix(in srgb, currentColor 20%, transparent)",
 					"name": "Accent 6",
 					"slug": "accent-6"
+				},
+				{
+					"color": "#f6d089",
+					"name": "Light Orange",
+					"slug": "custom-light-orange"
+				},
+				{
+					"color": "#ffffff",
+					"name": "White",
+					"slug": "custom-white"
 				}
 			]
 		},
@@ -115,6 +125,172 @@
 			"defaultFontSizes": false,
 			"fluid": true,
 			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Anton",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/anton/anton-v27-latin-regular.woff2"
+							]
+						}
+					],
+					"fontFamily": "Anton, sans-serif",
+					"name": "Anton",
+					"slug": "anton"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-100.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-100italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-200.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-200italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-200.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-200italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-500.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-500italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-600.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-600italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-700.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-700italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-800.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-800italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-900.woff2"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/poppins/poppins-v24-latin-900italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "Poppins, sans-serif",
+					"name": "Poppins",
+					"slug": "poppins"
+				},
 				{
 					"fontFace": [
 						{
@@ -195,6 +371,16 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"background": {
+			"backgroundAttachment": "fixed",
+			"backgroundImage": {
+				"id": 38,
+				"source": "file",
+				"title": "banner-2-scaled",
+				"url": "http://localhost/wp-content/uploads/2026/07/banner-2-scaled-1.png"
+			},
+			"backgroundSize": "cover"
+		},
 		"blocks": {
 			"core/avatar": {
 				"border": {
@@ -361,17 +547,24 @@
 				"elements": {
 					"link": {
 						":hover": {
-							"typography": {
-								"textDecoration": "underline"
-							}
+							"color": {
+								"text": "var(--wp--preset--color--accent-2) !important"
+							},
+							"css": "text-shadow: 0 1px 2px #fff !important;"
 						},
+						"css": "transition: color 0.25s, text-shadow 0.25s",
 						"typography": {
 							"textDecoration": "none"
 						}
 					}
 				},
+				"spacing": {
+					"blockGap": "var(--wp--preset--spacing--30)"
+				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)"
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontStyle": "normal",
+					"fontWeight": "600"
 				}
 			},
 			"core/post-comments-form": {
@@ -561,12 +754,19 @@
 				}
 			},
 			"core/site-title": {
+				"color": {
+					"text": "var(--wp--preset--color--accent-2)"
+				},
+				"css": "text-shadow: 0 1px 3px #fff",
 				"elements": {
 					"link": {
 						":hover": {
 							"typography": {
 								"textDecoration": "underline"
 							}
+						},
+						"color": {
+							"text": "var(--wp--preset--color--accent-2)"
 						},
 						"typography": {
 							"textDecoration": "none"
@@ -575,7 +775,7 @@
 				},
 				"typography": {
 					"fontWeight": "700",
-					"letterSpacing": "-.5px"
+					"letterSpacing": "0px"
 				}
 			},
 			"core/term-description": {
@@ -588,6 +788,7 @@
 			"background": "var(--wp--preset--color--base)",
 			"text": "var(--wp--preset--color--contrast)"
 		},
+		"css": ".home-post-preview .wp-block-post:nth-of-type(1) {\n\tbackground: #000;\n}\n\n.home-post-preview .wp-block-post:nth-of-type(2) {\n\tbackground: #f00;\n}\n\n.home-post-preview .wp-block-post:nth-of-type(3) {\n\tbackground: #ff0;\n}\n\n.glow-link {\n        text-decoration: none;\n\ttext-shadow: 0 1px 1px var(--wp--preset--color--contrast);\n\ttransition: color .25s, text-shadow 0.25s;\n}\n\n.glow-link:hover {\n\tcolor: var(--wp--preset--color--accent-2) !important;\n\ttext-shadow: 0 1px 2px var(--wp--preset--color--white);\n}",
 		"elements": {
 			"button": {
 				":focus": {
@@ -663,6 +864,8 @@
 			},
 			"heading": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--anton)",
+					"fontStyle": "normal",
 					"fontWeight": "400",
 					"letterSpacing": "-0.1px",
 					"lineHeight": "1.125"
@@ -687,8 +890,9 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--manrope)",
+			"fontFamily": "var(--wp--preset--font-family--poppins)",
 			"fontSize": "var(--wp--preset--font-size--large)",
+			"fontStyle": "normal",
 			"fontWeight": "300",
 			"letterSpacing": "-0.1px",
 			"lineHeight": "1.4"

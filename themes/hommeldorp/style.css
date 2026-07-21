@@ -74,3 +74,14 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
 :where(pre) {
 	overflow-x: auto;
 }
+
+.glow-link {
+	text-decoration: none;
+	text-shadow: 0 1px 1px var(--wp--preset--color--contrast);
+	transition: color .25s, text-shadow 0.25s;
+}
+
+.glow-link:hover {
+	color: var(--wp--preset--color--accent-2) !important;
+	text-shadow: 0 1px 2px var(--wp--preset--color--white);
+}
