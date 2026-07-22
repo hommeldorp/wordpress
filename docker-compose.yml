@@ -18,6 +18,9 @@ services:
       - type: bind
         source: ./uploads
         target: /var/www/html/wp-content/uploads
+      - type: bind
+        source: ./plugins/contact-slide-in
+        target: /var/www/html/wp-content/plugins/contact-slide-in
       #- ./wp-content/:/var/www/html/wp-content
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
       #- ./themes/hommeldorp/:/var/www/html/wp-content/themes/hommeldorp # Theme development
