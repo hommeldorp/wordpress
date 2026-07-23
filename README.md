@@ -25,6 +25,13 @@ Since the vast majority of docs and community content for wordpress is in Englis
 You can reset the docker containers by running `docker compose down -v`. This will shut everything down and delete all site content from the DB.
 You can also delete `wp-app` to remove all plugins and themes. 
 
+## Development
+
+You can run `docker compose run dev` to start a container with PHP/Node development tools.
+This command will enter immediately into an interactive shell.
+You can exit the shell with `Crtl+P` and then `Ctls+Q` or by running `exit`.
+You can also run `docker compose exec dev bash` to enter a shell in the dev container.
+
 ## Sources
 
 The following sources were used to develop this project:
@@ -38,7 +45,7 @@ Depending on how the system is setup, you may encounter issues with file permiss
 The most basic issues are addressed via the compose file, but some may persist and present in various ways (i.e. can't install plugins via WP admin panel).
 
 In particular the wp-app (volume of all WP files), may be created with permissions that prevent editing.
-To diagose and solve these issues, run:
+To diagnose and solve these issues, run:
 ```
 > ls -ld wp-app
 drwxr-xr-x. 1 33 tape 582 20 jul 10:42 wp-app

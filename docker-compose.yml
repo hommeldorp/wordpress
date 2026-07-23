@@ -1,6 +1,36 @@
 name: hommeldorp-wordpress
 
 services:
+  # This dev container arranges all the development tooling (Node/NPM, PHP/Composer, WP-CLI) and
+  # mounts the plugin development directory into the container as a bind mount so that it
+  # can be edited on both the host (edits in the IDE) and container (dev tooling).
+  #
+  # This container will fail on docker-compose up as the DB takes time to initialize, but it can
+  # just be run again (see README.md).
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dev-env
+    # runs the container with the same user ID as the host
+    user: ${UID}:${GID}
+    depends_on:
+      - db
+      - wp
+    working_dir: /var/www/html
+    volumes:
+      - ./wp-app:/var/www/html
+      - ./config/wp_php.ini:/usr/local/etc/php/conf.d/conf.ini
+      - type: bind
+        source: ./plugins/contact-slide-in
+        target: /var/www/html/wp-content/plugins/contact-slide-in
+#      - ./config/wp_php.ini:/etc/php/8.2/apache2/conf.d/99-local.ini
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: "${DB_NAME}"
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: "${DB_ROOT_PASSWORD}"
+
   wp:
     image: wordpress:latest # https://hub.docker.com/_/wordpress/
     # runs the container with the same user ID as the host
@@ -18,9 +48,6 @@ services:
       - type: bind
         source: ./uploads
         target: /var/www/html/wp-content/uploads
-      - type: bind
-        source: ./plugins/contact-slide-in
-        target: /var/www/html/wp-content/plugins/contact-slide-in
       #- ./wp-content/:/var/www/html/wp-content
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
       #- ./themes/hommeldorp/:/var/www/html/wp-content/themes/hommeldorp # Theme development
@@ -34,20 +61,6 @@ services:
     links:
       - db
 
-  wpcli:
-    image: wordpress:cli
-    volumes:
-      - ./config/wp_php.ini:/usr/local/etc/php/conf.d/conf.ini
-      - ./wp-app:/var/www/html
-    environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_NAME: "${DB_NAME}"
-      WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD: "${DB_ROOT_PASSWORD}"
-    depends_on:
-      - db
-      - wp
-
   pma:
     image: phpmyadmin:latest  # https://hub.docker.com/_/phpmyadmin
     environment:
@@ -57,7 +70,7 @@ services:
       MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
       UPLOAD_LIMIT: 50M
     ports:
-      - ${IP}:8080:80
+      - "${IP}:8080:80"
     links:
       - db:db
     volumes:
@@ -68,7 +81,7 @@ services:
     image: mysql:latest # https://hub.docker.com/_/mysql/ - or mariadb https://hub.docker.com/_/mariadb
     # platform: linux/x86_64  # Uncomment if your machine is running on arm (ex: Apple Silicon processor)
     ports:
-      - ${IP}:3306:3306 # change ip if required
+      - "${IP}:3306:3306" # change ip if required
     command: [
       '--character-set-server=utf8mb4',
       '--collation-server=utf8mb4_unicode_ci'
