@@ -19,7 +19,7 @@ add_action( 'admin_menu', 'contact_slide_in_init_menu' );
  * @return void
  */
 function contact_slide_in_init_menu() {
-    add_menu_page( __( 'Job Place', 'contact-slide-in'), __( 'Job Place', 'contact-slide-in'), 'manage_options', 'contact-slide-in', 'contact_slide_in_admin_page', 'dashicons-admin-post', '2.1' );
+    add_menu_page( __( 'Contact Slide-in', 'contact-slide-in'), __( 'Contact Slide-in', 'contact-slide-in'), 'manage_options', 'contact-slide-in', 'contact_slide_in_admin_page', 'dashicons-admin-post', '2.1' );
 }
 
 /**
