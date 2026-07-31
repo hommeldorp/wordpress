@@ -25,11 +25,8 @@ services:
       - ./wp-app:/var/www/html
       - ./config/wp_php.ini:/usr/local/etc/php/conf.d/conf.ini
       - type: bind
-        source: ./plugins/contact-slide-in
-        target: /var/www/html/wp-content/plugins/contact-slide-in
-      - type: bind
-        source: ./plugins/contact-slide-in-trigger
-        target: /var/www/html/wp-content/plugins/contact-slide-in-trigger
+        source: ./plugins/contact-form
+        target: /var/www/html/wp-content/plugins/contact-form
 #      - ./config/wp_php.ini:/etc/php/8.2/apache2/conf.d/99-local.ini
     environment:
       WORDPRESS_DB_HOST: db:3306
@@ -55,11 +52,8 @@ services:
         source: ./uploads
         target: /var/www/html/wp-content/uploads
       - type: bind
-        source: ./plugins/contact-slide-in
-        target: /var/www/html/wp-content/plugins/contact-slide-in
-      - type: bind
-        source: ./plugins/contact-slide-in-trigger
-        target: /var/www/html/wp-content/plugins/contact-slide-in-trigger
+        source: ./plugins/contact-form
+        target: /var/www/html/wp-content/plugins/contact-form
       #- ./wp-content/:/var/www/html/wp-content
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
       #- ./themes/hommeldorp/:/var/www/html/wp-content/themes/hommeldorp # Theme development

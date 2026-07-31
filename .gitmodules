@@ -1,3 +1,6 @@
 [submodule "themes/hommeldorp"]
 	path = themes/hommeldorp
 	url = https://github.com/thunder033/hommeldorp-wp-theme-hommeldorp
+[submodule "plugins/contact-form"]
+	path = plugins/contact-form
+	url = https://github.com/thunder033/hommeldorp-wp-plugin-contact-form
