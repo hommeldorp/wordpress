@@ -1,5 +1,8 @@
 name: hommeldorp-wordpress
 
+# Sources/Examples
+# https://github.com/chriszarate/docker-compose-wordpress/blob/master/docker-compose.yml
+
 services:
   # This dev container arranges all the development tooling (Node/NPM, PHP/Composer, WP-CLI) and
   # mounts the plugin development directory into the container as a bind mount so that it
