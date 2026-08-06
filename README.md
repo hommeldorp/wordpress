@@ -62,3 +62,7 @@ drwxr-xr-x. 1 33 tape 582 20 jul 10:42 wp-app
 drwxrwxrwx. 1 greg tape 582 20 jul 10:42 wp-app
 
 ```
+
+## Submodules
+
+Git sub modules were configured based on this guide: https://github.blog/open-source/git/working-with-submodules/
