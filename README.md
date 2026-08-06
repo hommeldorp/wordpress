@@ -2,11 +2,11 @@
 
 This git repo contains Wordpress content for Hommeldorp website:
 
-- website theme
-- custom plugins
+- website theme: (Hommeldorp, as submodule)
+- custom plugins (Contact Form, as submodule)
 - everything needed to run Wordpress locally with Docker
 
-Since the vast majority of docs and community content for wordpress is in English, that is the language used for approachability
+Since the vast majority of docs and community content for Wordpress is in English, that is the language used for approachability
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ Since the vast majority of docs and community content for wordpress is in Englis
 
 ## Setup
 
-1. Copy `env.example` to a new `.env` file (and update values if needed)
+1. Copy `env.example` to a new `.env` file (and update values as required)
 2. If you would like to restore from an existing database, copy the SQL seed script into `wp-data`. All SQL files in this folder will be run, so append "backup" to any you don't want to be run.
 3. Run `docker compose up` to start all the containers
    1. After this you may need to modify the permissions of `wp-app`; see "Folder permissions" below
@@ -39,7 +39,7 @@ The following sources were used to develop this project:
 - https://hookturn.io/version-control-wp-content-using-git/
 - https://github.com/nezhar/wordpress-docker-compose
 
-## Folder permissions
+## Folder permissions for development
 
 Depending on how the system is setup, you may encounter issues with file permissions.
 The most basic issues are addressed via the compose file, but some may persist and present in various ways (i.e. can't install plugins via WP admin panel).
@@ -65,4 +65,6 @@ drwxrwxrwx. 1 greg tape 582 20 jul 10:42 wp-app
 
 ## Submodules
 
-Git sub modules were configured based on this guide: https://github.blog/open-source/git/working-with-submodules/
+Each theme and plugin is a submodule to support using the "Deployer for Git" plugin, which does not support specifying a path.
+
+Git submodules were configured based on this guide: https://github.blog/open-source/git/working-with-submodules/
