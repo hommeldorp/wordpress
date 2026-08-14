@@ -27,6 +27,9 @@ services:
       - type: bind
         source: ./plugins/contact-form
         target: /var/www/html/wp-content/plugins/contact-form
+      - type: bind
+        source: ./plugins/crowdfunding-banner
+        target: /var/www/html/wp-content/plugins/crowdfunding-banner
 #      - ./config/wp_php.ini:/etc/php/8.2/apache2/conf.d/99-local.ini
     environment:
       WORDPRESS_DB_HOST: db:3306
@@ -54,6 +57,9 @@ services:
       - type: bind
         source: ./plugins/contact-form
         target: /var/www/html/wp-content/plugins/contact-form
+      - type: bind
+        source: ./plugins/crowdfunding-banner
+        target: /var/www/html/wp-content/plugins/crowdfunding-banner
       #- ./wp-content/:/var/www/html/wp-content
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
       #- ./themes/hommeldorp/:/var/www/html/wp-content/themes/hommeldorp # Theme development

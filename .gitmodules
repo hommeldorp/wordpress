@@ -4,3 +4,6 @@
 [submodule "plugins/contact-form"]
 	path = plugins/contact-form
 	url = ../wp-plugin-contact-form
+[submodule "plugins/crowdfunding-banner"]
+	path = plugins/crowdfunding-banner
+	url = ../wp-plugin-crowdfunding-banner
